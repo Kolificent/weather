@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24px;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 17px;
+  flex-direction: column;
+  gap: 17px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  border: 1px solid black;
+}
+
+.search-wrapper {
+  width: 100%;
+  padding: 7px 17px;
+}
+
+.search-form {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0px;
+}
+
+.weather {
+  width: 100%;
+  border-top: 1px solid black;
+  display: flex;
+}
+
+.weather-info {
+  width: 50%;
+  padding: 17px;
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+}
+
+.detail-section * {
+  font-size: 21px;
+}
+
+.daytime {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border-bottom: 1px solid black;
+  padding-bottom: 8px;
+  padding-top: 8px;
+}
+
+.daytime:last-child {
+  border-bottom: none;
+}
+
+.daytime-info-detail {
+  display: flex;
+  flex-direction: column;
+}
+
+.daytime-info-detail * {
+  font-size: 18px;
+}
+
+.daytime-time {
+  font-size: 18px;
+}
+
+.daytime-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.current-location-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.temperature-section {
+  vertical-align: super;
+}
+
+.favorite-locations {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid black;
+}
+
+.favorite-locations-title {
+  padding: 15px;
+}
+
+.weather-icon * {
+  font-size: 48px;
+}
+
+.favorite-locations-list {
+  padding: 17px;
+  border-top: 1px solid black;
+  display: flex;
+  overflow-y: auto;
+  width: 100%;
+  /* не знаю способ лучше */
+  height: 486px;
+  flex-direction: column;
+  gap: 12px;
+  list-style-type: none;
+}
+
+input {
+  font-size: 18px;
+  width: 100%;
+  background-color: transparent;
+}
+
+.location-value:hover {
+  text-decoration: underline;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+.degree-value {
+  font-size: 70px;
+}
+
+button {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.hidden {
+  visibility: hidden;
+}

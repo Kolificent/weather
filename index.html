@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="search-wrapper">
+        <form action="submit" class="search-form">
+          <input
+            type="text"
+            name="location"
+            placeholder="Input location..."
+            class="search-input"
+            required
+          />
+          <button type="submit" class="search-button">
+            <i class="bx bx-search"></i>
+          </button>
+        </form>
+      </div>
+      <div class="weather">
+        <div class="weather-info hidden">
+          <section class="current-location-section">
+            <p class="current-location-title"></p>
+            <button class="fav-button">
+              <i class="bx bx-heart"></i>
+            </button>
+          </section>
+          <section class="temperature-section">
+            <span class="degree-value"></span>
+            <span class="weather-icon"></span>
+          </section>
+          <section class="detail-section">
+            <p class="feelslike">
+              <span>Feels like: </span><span class="feelslike-value"></span>
+            </p>
+            <p class="sunrise">
+              <span>Sunrise: </span><span class="sunrise-value"></span>
+            </p>
+            <p class="sunset">
+              <span>Sunset: </span><span class="sunset-value"></span>
+            </p>
+          </section>
+          <section class="daytime-section">
+            <div class="daytime">
+              <section class="daytime-time" id="1-time"></section>
+              <section class="daytime-info">
+                <div class="daytime-info-detail">
+                  <p class="daytime-info-temp-value">
+                    <span>Temperature:</span>
+                    <span id="1-temp"></span>
+                  </p>
+                  <p class="daytime-info-feels-value">
+                    <span>Feels like:</span>
+                    <span id="1-feels"></span>
+                  </p>
+                </div>
+                <div class="daytime-info-icon" id="1-icon"></div>
+              </section>
+            </div>
+            <div class="daytime">
+              <section class="daytime-time" id="2-time"></section>
+              <section class="daytime-info">
+                <div class="daytime-info-detail">
+                  <p class="daytime-info-temp-value">
+                    <span>Temperature:</span>
+                    <span id="2-temp"></span>
+                  </p>
+                  <p class="daytime-info-feels-value">
+                    <span>Feels like:</span>
+                    <span id="2-feels"></span>
+                  </p>
+                </div>
+                <div class="daytime-info-icon" id="2-icon"></div>
+              </section>
+            </div>
+            <div class="daytime">
+              <section class="daytime-time" id="3-time"></section>
+              <section class="daytime-info">
+                <div class="daytime-info-detail">
+                  <p class="daytime-info-temp-value">
+                    <span>Temperature:</span>
+                    <span id="3-temp"></span>
+                  </p>
+                  <p class="daytime-info-feels-value">
+                    <span>Feels like:</span>
+                    <span id="3-feels"></span>
+                  </p>
+                </div>
+                <div class="daytime-info-icon" id="3-icon"></div>
+              </section>
+            </div>
+          </section>
+        </div>
+        <div class="favorite-locations">
+          <div class="favorite-locations-title">Added Locations:</div>
+          <ul class="favorite-locations-list"></ul>
+        </div>
+      </div>
+    </div>
+    <div class="error-message"></div>
+    <script type="module" src="./script/index.js"></script>
+  </body>
+</html>
